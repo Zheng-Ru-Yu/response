@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>响应式</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			h3{
+				
+				background: gray;
+				text-align: center;
+				line-height: 100px;
+				/*margin-top: 50px;*/
+			}
+			header,nav,footer{
+				width: 680px;
+				height: 100px;
+				margin: 0 auto;
+				margin-top: 50px;
+				background: gray;
+				
+			}
+			img{
+				width: 100%;
+			}
+			article{
+				width: 100%;
+				height: 100px;
+			}
+			#left{
+				width: 75%;
+				height: 100px;
+				background: yellow;
+				float: left;
+				display:table;
+				word-break: all;
+			}
+			#right{
+				width: 20%;
+				margin-left: 5%;
+				height: 100px;
+				background: blue;
+				float: right;
+				display:table;
+				word-break: all;
+			}
+
+			p{
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+
+			footer{
+				overflow: hidden;
+			}
+			@media screen and (max-width:980px){
+				header,nav,footer{
+				width: 100%;
+				height: 100%;
+
+			
+			}
+		
+		}
+			@media screen and (max-width:480px){
+			#left{
+				width: 100%;
+			}
+			#right{
+				width: 100%;
+			}
+			
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h3>header</h3>
+		</header>
+		<nav>
+			<h3>nav</h3>
+		</nav>
+		<banner><img src="banner01_h5vf.jpg" alt=""></banner>
+		<article>
+			<div id="left">
+				<p>cdsiuc gdsu ygcydcis ducidg cisdgci ufed hifc uhedif cheydi gfcuyes tgbg trgtr</p>
+			</div>
+			<div id="right">
+				<p>gfc yeg fci ewu hfciue dhfiuwe hfeuhfciu edhc fudhef uycwgefycw gdycfhbe wdyuj fg</p>
+			</div>
+		</article>
+		<footer>
+			<h3>footer</h3>
+		</footer>
+	</body>
+</html>
